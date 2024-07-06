@@ -42,9 +42,11 @@
         <button class="btn-roll" onclick="diceroll()">ROLL</button>
     </div>
 <script>
-    const imgdice = document.getElementById("dice-roll");
-    const rolldice = Math.floor(Math.random()* (7-1))+1;
+    let imgdice = document.getElementById("dice-roll");
+    
+   
     function diceroll() {
+        const rolldice = Math.floor(Math.random()* (7-1)+1);
         switch (rolldice) {
             case 1:
                 imgdice.src = "./1.png"
